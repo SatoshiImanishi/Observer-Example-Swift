@@ -34,7 +34,7 @@ class  ExViewController: UIViewController, ExViewDelegate {
         mModel.getMessage()
     }
     
-    // MARK: - Notification Selector
+    // MARK: - Notification Listener
     func receiveNotification(notification: NSNotification) {
         if let userInfo = notification.userInfo {
             let resultMessage = userInfo["message"] as! String
